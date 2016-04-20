@@ -7,7 +7,7 @@ public class RockPaperScissorsTest {
   @Test
   public void runRockPaperScissors_containsOneRPSValue_true() {
     RockPaperScissors testRPS = new RockPaperScissors();
-    Boolean expected = ((testRPS.runRockPaperScissors().contains("rock")) || (testRPS.runRockPaperScissors().contains("paper")) || (testRPS.runRockPaperScissors().contains("scissors")));
+    Boolean expected = ((testRPS.runRockPaperScissors().contains("Rock")) || (testRPS.runRockPaperScissors().contains("Paper")) || (testRPS.runRockPaperScissors().contains("Scissors")));
     assertTrue(expected);
   }
 
@@ -16,7 +16,7 @@ public class RockPaperScissorsTest {
     RockPaperScissors testRPS = new RockPaperScissors();
     Object[] testArray = testRPS.runRockPaperScissors().toArray();
 
-    Boolean expected = ( ( (testArray[0] == "rock") || (testArray[0] == "paper") || (testArray[0] =="scissors") ) && ( (testArray[1] == "rock") || (testArray[1] == "paper") || (testArray[1] =="scissors") ) );
+    Boolean expected = ( ( (testArray[0] == "Rock") || (testArray[0] == "Paper") || (testArray[0] =="Scissors") ) && ( (testArray[1] == "Rock") || (testArray[1] == "Paper") || (testArray[1] =="Scissors") ) );
     assertTrue(expected);
   }
 

@@ -14,11 +14,11 @@ public class RockPaperScissors {
 
     for (Integer player : playerArray) {
       if ( player == 0 ) {
-        arrayRPS.add("rock");
+        arrayRPS.add("Rock");
       } else if ( player == 1 ) {
-        arrayRPS.add("paper");
+        arrayRPS.add("Paper");
       } else {
-        arrayRPS.add("scissors");
+        arrayRPS.add("Scissors");
       }
     }
 

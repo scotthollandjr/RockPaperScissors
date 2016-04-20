@@ -1,12 +1,23 @@
-<h1>Rock, Paper, Scissors!</h1>
+<h1 class="title">Rock, Paper, Scissors, Shoot!</h1>
 
-<!-- <p></p> -->
+<div class="row">
+  <div class="col-md-6">
+    <form action='/results' method='get' class="player1Choice">
+      <div>
 
-<form action='/results' method='get'>
-<!--<div class="form-group">
-    <label for="userNumber">Enter number</label>
-    <input id="userNumber" name="userNumber" class="form-control" type="text">
-  </div> -->
+      </div> <!-- class player1 -->
+      <button type="submit" class="btn btn-info">Player 1</button>
+      <button type="submit" class="btn btn-info">Computer</button>
+    </form>
+  </div> <!-- class col-med-6 -->
 
-  <button type="submit" class="btn btn-info">Go!</button>
-</form>
+  <div class="col-md-6">
+    <form action='/results' method='get' class="player2Choice">
+      <div>
+
+      </div> <!-- class player1 -->
+      <button type="submit" class="btn btn-info">Player 2</button>
+      <button type="submit" class="btn btn-info">Computer</button>
+    </form>
+  </div> <!-- class col-med-6 -->
+</div> <!-- class row -->
