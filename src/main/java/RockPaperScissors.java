@@ -7,14 +7,19 @@ public class RockPaperScissors {
     ArrayList<Object> arrayRPS = new ArrayList<Object>();
     Random randomGenerator = new Random();
     Integer playerOne = randomGenerator.nextInt(3);
+    Integer playerTwo = randomGenerator.nextInt(3);
+    ArrayList<Integer> playerArray = new ArrayList<Integer>();
+    playerArray.add(playerOne);
+    playerArray.add(playerTwo);
 
-    // for (String player : playerArray) {
-    if ( playerOne == 0 ) {
-      arrayRPS.add("rock");
-    } else if ( playerOne == 1 ) {
-      arrayRPS.add("paper");
-    } else {
-      arrayRPS.add("scissors");
+    for (Integer player : playerArray) {
+      if ( player == 0 ) {
+        arrayRPS.add("rock");
+      } else if ( playerOne == 1 ) {
+        arrayRPS.add("paper");
+      } else {
+        arrayRPS.add("scissors");
+      }
     } return arrayRPS;
   }
 }
