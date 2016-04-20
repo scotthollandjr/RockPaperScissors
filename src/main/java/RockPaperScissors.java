@@ -15,12 +15,34 @@ public class RockPaperScissors {
     for (Integer player : playerArray) {
       if ( player == 0 ) {
         arrayRPS.add("rock");
-      } else if ( playerOne == 1 ) {
+      } else if ( player == 1 ) {
         arrayRPS.add("paper");
       } else {
         arrayRPS.add("scissors");
       }
-    } return arrayRPS;
+    }
+
+    if (playerOne == playerTwo) {
+      arrayRPS.add("Tie game!");
+    } else if (playerOne == 0) {
+        if (playerOne + playerTwo == 1) {
+          arrayRPS.add("Player 2 wins!");
+        } else {
+          arrayRPS.add("Player 1 wins!");
+        }
+    } else if (playerOne == 1) {
+        if (playerOne + playerTwo == 3) {
+          arrayRPS.add("Player 2 wins!");
+        } else {
+          arrayRPS.add("Player 1 wins!");
+        }
+    } else if (playerOne == 2) {
+        if (playerOne + playerTwo == 2) {
+          arrayRPS.add("Player 2 wins!");
+        } else {
+          arrayRPS.add("Player 1 wins!");
+        }
+      } return arrayRPS;
   }
 }
 
